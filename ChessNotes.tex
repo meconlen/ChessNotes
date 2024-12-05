@@ -1,0 +1,181 @@
+\documentclass[11pt, oneside]{book}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+
+\usepackage[LSB,LSBC5,T1]{fontenc}
+\usepackage{xskak}
+%SetFonts
+
+\title{Chess Notes}
+\author{Mike Conlen}
+%\date{}							% Activate to display a given date or no date
+\begin{document}
+
+\setchessboard{
+	boardfontencoding=LSBC5,
+	pgfstyle=color,
+	color=brown!88,
+	trimtocolor=black,
+	backboard,
+	trimtocolor=white,
+	color=brown!33,
+	backboard,
+	setfontcolors,
+	showmover=true
+}
+
+\maketitle
+\tableofcontents
+\newpage
+
+
+\chapter{Openings}
+\section{Introduction}
+
+The goal of common openings in chess is to control the middle of the board; that is, prevent your opponent from being able to move pieces into that area of the board. The ideal opening results in the 10 Golden Moves with two pawns on the fourth rank flanked by two bishops which themselves have two knights behind them; the king castled and two rooks on the first rank in the middle. This is usually impossible as black responds to your opening to control the center as well. 
+
+The most common way to control the center is to open e4. 
+\section{King's Pawn 1.e4}
+
+	\newchessgame
+	\mainline{1. e4}\par
+	\chessboard
+
+	Kings pawn opening hopes to follow with the queens pawn (d4) and knights. How we get there depends on black's response. 
+	\begin{itemize}
+		\item 1\dots 5 - The Open Game
+		\item 1\dots c5 - The Sicilian
+		\item 1\dots c6 - The Caro-Kann
+		\item 1\dots e6 - The French Defense
+		\item Other stuff
+	\end{itemize} 
+
+	The Sicilian, The Open, The French and The Caro-Kann comprise roughly 84\% of responses at all levels. 
+	
+	\filbreak
+	\subsection{The Open Game}
+
+		\newchessgame
+		\mainline{1.e4 e5}\par
+		\chessboard
+
+		\filbreak
+		\subsubsection{The King's Knight Opening}
+	
+			\newchessgame
+			\mainline{1.e4 e5 2.Nf3}\par
+			\chessboard
+			\filbreak
+	
+		\subsubsection{The Vienna}
+			\newchessgame
+			\mainline{1.e4 e5 2.Nc3}\par
+			\chessboard
+			\filbreak
+
+			Against Nf6 we play a delayed King's Gambit 3. f4. \par
+			\newchessgame
+			\mainline{1.e4 e5 2.Nc3 Nf6 3. f4}\par
+			\chessboard
+			\filbreak
+			
+			If black takes we play e5 pushing the knight back to g8 or taking if not. Then we can continue with Nf3. This leaves us with two knights and a pawn to Black's one pawn in the center. \par
+			\newchessgame
+			\mainline{1.e4 e5 2.Nc3 Nf6 3. f4 f4 4. e5 Ng8 5. Nf3}\par
+			\chessboard
+			\filbreak
+			
+			Against Nc6 we play c4.  
+
+			\newchessgame
+			\mainline{1.e4 e5 2.Nc3 Nc6 3. Bc4}\par
+			\chessboard
+
+			This prepares for d3, f4, Nf3. 
+			\filbreak
+
+	\subsection{The Sicilian Defense}
+		
+		\newchessgame
+		\mainline{1.e4 c5}\par
+		\chessboard\par
+		
+		The Sicilian defense tries to control the center from the sides. Where e5 controls d4 and f4 the move c5 controls d5 from the flank. If black follows with Nc6 the d4 square is further attacked. White will fight for d4 via 2. Nf3 and 3. d4. White hopes black takes the pawn on d4 then takes with the knight.
+		\filbreak
+
+		\newchessgame
+		\mainline{1.e4 c5 2. Nf3 d6 3. d4 }\par
+		\chessboard\par
+
+		There are three Open Sicilian Defenses; they involve 2\dots d6, 2\dots Nc6 adn 2\dots e6 all followed by 3. d4. 
+		
+		Returning to our example white may continue 
+		
+		\newchessgame
+		\mainline{1.e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4}\par
+		\chessboard\par
+			
+		Black brings out his knight with Nf6 attacking white's pawn which can't escape because of the pawn on d6. We protect with Nc3			
+		\newchessgame
+		\mainline{1.e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3}\par
+		\chessboard\par
+		
+		Whence black has options. 
+
+		\begin{itemize}
+			\item 5\dots a6 - Najdorf
+			\item 5\dots Nc6 - Classical 
+			\item 5\dots c6 - Dragon
+		\end{itemize}
+
+		Returning to move 2 Black has other options as well. 
+
+		\filbreak
+		
+	\section{Queen's Pawn 1.d4}
+
+\chapter{Black Opening Responses}
+	\section{Against King's Pawn 1.e4}
+		\subsection{1.e4 e5}
+		\subsection{Caro-Kann 1.e4 c6}
+			
+			The Caro-Kann is a building block opening where we play 1\dots c6 preparing for 2\dots d5. One advantage is that it opens your c8\dots h3 diagonal for the bishop. For example \par
+			\newchessgame
+			\mainline{1.e4 c6 2.d4 d5}\par
+			\chessboard[inverse]\par
+			\filbreak
+
+			An example opening might look like this
+			
+			\newchessgame
+			\mainline{1.e4 c6 2.d4 d5 3.e5 Bf5 4. Nf3 e6 5. Be2 Nd7 6. O-O c5 7. c3 Ne7 8. Be3 Nc6}\par
+			\chessboard[inverse]\par
+		
+		\subsection{The French 1.e4 e6}
+		\subsection{The Sicilian}
+		
+		\subsection{The King's Indian}
+			The King's Indian is a setup defense that can generally be played the same way regardless of white's opening. The idea is to play 1\dots Nf6, 2\dots g6, 3\dots Bg7, 4\dots d6; like so \par
+			\newchessgame
+			\mainline{1.d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6}\par
+			\chessboard[inverse]\par
+			
+			NB: We play d6 to prevent e5, when white opens e4 we play a slightly different order
+			\newchessgame
+			\mainline{1.e4 d6 2. d4 Nf6 3. Nc3 g6 4. Be3 Bg7}\par
+			\chessboard[inverse]\par
+			
+			This is technically the Pirc Defense but we arrive at the same position. The difference is when we play d6 to prevent white's e5. 
+						
+		\subsection{The Dutch Defense}
+		
+		\subsection{e6 b6}
+
+
+
+\end{document}  
