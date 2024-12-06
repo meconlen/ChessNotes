@@ -182,9 +182,31 @@ The most common way to control the center is to open e4.
 \chapter{Pawns}
 
 	\begin{definition}[Isolated Pawn] \index{pawn!isolated}\index{isolated pawn}
-		a pawn on a file for which there is no friendly pawn on the adjacent files. 
+		A pawn on a file for which there is no friendly pawn on the adjacent files. 
+	\end{definition}
+	
+	A isolated pawn can be at a disadvantage because it has no defenders or it can be useful in pushing through the opponent's pieces while defended by other non-pawn pieces. 
+	
+	\begin{definition}[Backwards Pawn]\index{pawn!backwards}\index{backwards pawn}
+		A pawn behind it's neighbors which also cannot move forward because the squares in front of it are controlled by the opponent.
 	\end{definition}
 
+	\begin{definition}[Double Pawn]\index{pawn!double}\index{double pawn}
+		Two pawns on the same file.
+	\end{definition}
+	
+	Double pawns are often low in value but at times they can be superior in defense; for example if black has double pawns on the f-file and castles behind them the extra pawn provides additional defense and improves mobility on that side. 
+
+			\newchessgame
+			\mainline{1. d4 Nf6 2. Bg5 d5 3. Bxf6 exf6 4. e3 Bd6 5. Bd3 O-O 6. Qh5 g6 7. Qe2 f5}\par
+			\chessboard[inverse]\par
+
+
+	What we really want to watch out for are things like double isolated pawns, especially where they are immobile. 
+	
+	\begin{definition}[Pawn Island]\index{pawn island}
+		A group of connected pawns (possibly a group of one). 
+	\end{definition}
 \printindex
 
 \end{document}  

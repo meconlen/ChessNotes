@@ -6,3 +6,6 @@
 *.idx
 *.ilg
 *.ind
+*.dvi
+*.fdb_latexmk
+*.fls
