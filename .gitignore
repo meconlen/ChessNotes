@@ -3,3 +3,6 @@
 *.pdf
 *.synctex.gz
 *.toc
+*.idx
+*.ilg
+*.ind

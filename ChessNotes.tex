@@ -5,7 +5,10 @@
 %\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
 \usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
 								% TeX will automatically convert eps --> pdf in pdflatex		
-\usepackage{amssymb}
+\usepackage{amssymb,amsmath,amsthm, amsfonts}
+\newtheorem{definition}{Definition}
+\usepackage{makeidx}
+\makeindex
 
 \usepackage[LSB,LSBC5,T1]{fontenc}
 \usepackage{xskak}
@@ -176,6 +179,12 @@ The most common way to control the center is to open e4.
 		
 		\subsection{e6 b6}
 
+\chapter{Pawns}
 
+	\begin{definition}[Isolated Pawn] \index{pawn!isolated}\index{isolated pawn}
+		a pawn on a file for which there is no friendly pawn on the adjacent files. 
+	\end{definition}
+
+\printindex
 
 \end{document}  
